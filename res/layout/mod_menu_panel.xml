@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_root"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6000000"
+    android:elevation="8dp">
+
+    <!-- Title bar -->
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FF1A1A1A"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MOD MENU TEMPLATE"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_minimize"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="–"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FF333333" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="×"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FF333333" />
+    </LinearLayout>
+
+    <!-- Menu content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOGGLES"
+            android:textColor="#FF00FF00"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/toggle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="God Mode"
+            android:textColor="#FFFFFFFF" />
+
+        <Switch
+            android:id="@+id/toggle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlimited Ammo"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SLIDERS"
+            android:textColor="#FF00FF00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <SeekBar
+            android:id="@+id/seek_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speed Multiplier: 1.0x"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/tv_speed_value" />
+
+        <Button
+            android:id="@+id/btn_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="ENABLE BACKGROUND OVERLAY"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FF0066FF"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</LinearLayout>
